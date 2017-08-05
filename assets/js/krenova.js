@@ -34,4 +34,50 @@ $(document).ready(function() {
     });
 
     $('a[title]').tooltip();
+
+    var scroll = new SmoothScroll('a[href*="#"]');
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 30) {
+            $(".navbar-default").css({
+                'background': '#377FF4',
+                'transition': '1s',
+                '-webkit-box-shadow': '1px 3px 3px 3px rgba(0,0,0,0.1)',
+                'box-shadow': '1px 3px 3px 3px rgba(0,0,0,0.1)',
+                'font-size': '1em',
+                'padding': '10px 0px 10px 0px'
+            });
+        } else {
+            $(".navbar-default").css({
+                'background': 'transparent',
+                'transition': '1s',
+                '-webkit-box-shadow': 'none',
+                'box-shadow': 'none',
+                'font-size': '1.2em',
+                'padding': '0px 0px 20px 0px'
+            });
+        }
+    });
+
+    // Instance the tour
+    var tour = new Tour({
+        steps: [{
+                element: "#am-sleep",
+                title: "Title of my step",
+                content: "Content of my step"
+            },
+            {
+                element: "#my-other-element",
+                title: "Title of my step",
+                content: "Content of my step"
+            }
+        ]
+    });
+
+    // Initialize the tour
+    tour.init();
+
+    // Start the tour
+    tour.start();
 });
