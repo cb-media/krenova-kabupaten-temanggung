@@ -41,13 +41,13 @@
                         <li><a href="#" class="hvr-sweep-to-top">HOME</a></li>
                         <li><a data-scroll href="#kategori" class="hvr-sweep-to-top">KATEGORI</a></li>
                         <li><a data-scroll href="#alur" class="hvr-sweep-to-top">ALUR</a></li>
-                        <li><a href="#" class="hvr-sweep-to-top">ABOUT US</a></li>
+                        <li><a href="#" class="hvr-sweep-to-top" id="tour-7">ABOUT US</a></li>
                         <li><a data-scroll href="#news" class="hvr-sweep-to-top">NEWS</a></li>
-                        <li class="dropdown">
+                        <li class="dropdown" id="tour-6">
                             <a href="#" class="hvr-sweep-to-top dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MEMBER AREA <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" data-toggle="modal" data-target="#modal-login">Login</a></li>
-                                <li><a href="#" data-toggle="modal" data-target=".modal-register">Register</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#modal-register">Register</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -60,18 +60,18 @@
 
     <section class="hero-section">
         <div class="container text-center text-wrapper">
-            <h2 id="am-sleep">Selamat Datang Kreator & Inovator Kabupaten Temanggung</h2>
+            <h2>Selamat Datang Kreator & Inovator Kabupaten Temanggung</h2>
             <h1>
                 <span class="primary-text">Bersama</span>
                 <span class="typed"></span> <br>
                 <span class="sub-primary-text">Kabupaten Temanggung</span> <br>
-                <a href="#" class="btn btn-lg btn-primary">Daftar Sekarang</a>
+                <a href="#" class="btn btn-lg btn-primary" id="tour-1">Daftar Sekarang</a>
             </h1>
         </div>
     </section>
 
     <section class="container-fluid kategori" id="kategori">
-        <h1 class="text-center">Kategori</h1>
+        <h1 class="text-center"><span id="tour-2">Kategori</span></h1>
         <br><br>
         <div class="container">
             <div class="row">
@@ -121,7 +121,7 @@
     </section>
 
     <section class="container-fluid alur-section" id="alur">
-        <h1 class="text-center">ALUR PENDAFTARAN</h1>
+        <h1 class="text-center"><span id="tour-3">ALUR PENDAFTARAN</span></h1>
         <br><br>
         <div class="container">
             <div class="row">
@@ -254,7 +254,7 @@
 
     <section class="container-fluid peraturan-section">
         <div class="container">
-            <h1 class="text-center">PERATRURAN DAN STEP PENDAFTARAN</h1>
+            <h1 class="text-center"><span id="tour-4">PERATURAN DAN LANGKAH PENDAFTARAN</span></h1>
             <p class="text-center">Tata cara pengusulan calon penerima penghargaan KRENOVA Kabupaten Temanggung Tahun 2017 adalah sebagai berikut:</p>
             <section>
                 <div class="container">
@@ -338,14 +338,14 @@
                                             <li>Softcopy Formulir 1, Formulir 2, dan Formulir 3, dan Proposal usulan temuan KRENOVA. Untuk Formulir 1, Formulir 2, dan Formulir 3 berupa hasil scan, sedangkan Proposal berupa file. Softcopy dapat pula dikirim
                                                 melalui email. Disarankan sudah dalam format PDF.</li>
                                             <li>Pengiriman ditujukan kepada Panitia KRENOVA:</li>
-                                            Badan Penelitian dan Pengembangan Kota Magelang
+                                            Badan Penelitian dan Pengembangan Kabupaten Temanggung
                                             <ul>
-                                                <li>Alamat : Jl. Jend. Sudirman 46 Magelang</li>
-                                                <li>Email: litbangmagelangkota@yahoo.co.id</li>
+                                                <li>Alamat : Jalan S. Kadar Maron No. 12, Sidorejo, Gilingsari, Kec. Temanggung, Kabupaten Temanggung, Jawa Tengah 56221</li>
+                                                <li>Email: litbangtamanggungkab@yahoo.co.id</li>
                                                 <li>Telepon 0293-360800, Fax 0293-312603</li>
-                                                <li>Facebook : Litbang Kota Magelang</li>
-                                                <li>Web : http://litbang.magelangkota.go.id/</li>
-                                                <li>Twitter: @litbangmglkota</li>
+                                                <li>Facebook : Litbang Kabupaten Temanggung</li>
+                                                <li>Web : http://bappeda.temanggungkab.go.id/</li>
+                                                <li>Twitter: @litbangtmgkab</li>
                                                 <li>Contact Person:</li>
                                                 <ol>
                                                     <li>MISRUN (085643437115)</li>
@@ -376,7 +376,7 @@
     </section>
 
     <section class="container-fluid news-section" id="news">
-        <h1 class="text-center">Berita & Pengumuman Event</h1>
+        <h1 class="text-center"><span id="tour-5">Berita & Pengumuman Event</span></h1>
         <br><br>
         <div class="container">
             <div class="row">
@@ -499,28 +499,97 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal fade" id="modal-login">
         <div class="modal-dialog">
-            <div class="loginmodal-container">
-                <h1>Login to Your Account</h1><br>
-                <form>
-                    <input type="text" name="user" placeholder="Username">
-                    <input type="password" name="pass" placeholder="Password">
-                    <input type="submit" name="login" class="login loginmodal-submit" value="Login">
-                </form>
-
-                <div class="login-help">
-                    <a href="#">Register</a> - <a href="#">Forgot Password</a>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center">Login Member</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                            <input type="checkbox"> Remember me
+                            </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
+            <!-- /.modal-content -->
         </div>
+        <!-- /.modal-dialog -->
     </div>
+    <!-- /.modal -->
+
+    <div class="modal fade" id="modal-register">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center">Register Member</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                            <input type="checkbox"> Remember me
+                            </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js'></script>
     <script src="node_modules/smooth-scroll/dist/js/smooth-scroll.js"></script>
-    <script src="assets/js/bootstrap-tour.min"></script>
+    <script src="assets/js/bootstrap-tour.min.js"></script>
     <script src="assets/js/krenova.js"></script>
 </body>
 

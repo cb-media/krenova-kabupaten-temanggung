@@ -1,3 +1,5 @@
+var scroll = new SmoothScroll('a[href*="#"]');
+
 $(document).ready(function() {
     var typed = new Typed('.typed', {
         strings: ["Membangun", "Berinovasi Untuk", "Berkreasi Untuk"],
@@ -35,8 +37,6 @@ $(document).ready(function() {
 
     $('a[title]').tooltip();
 
-    var scroll = new SmoothScroll('a[href*="#"]');
-
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll > 30) {
@@ -63,14 +63,39 @@ $(document).ready(function() {
     // Instance the tour
     var tour = new Tour({
         steps: [{
-                element: "#am-sleep",
-                title: "Title of my step",
-                content: "Content of my step"
+                element: "#tour-1",
+                title: "Daftar Sebagai Peserta Krenova 2017",
+                content: "Jadilah partisipan dalam pembangunan"
             },
             {
-                element: "#my-other-element",
-                title: "Title of my step",
-                content: "Content of my step"
+                element: "#tour-2",
+                title: "Kategori Krenova",
+                content: "Bidang yang mungkin sesuai dengan keahlianmu"
+            },
+            {
+                element: "#tour-3",
+                title: "Ikuti dan Pahami Alur Pendaftaran",
+                content: "Cermati alur krenova 2017 Kabupaten Temanggung"
+            },
+            {
+                element: "#tour-4",
+                title: "Peraturan Krenova 2017",
+                content: "Beberapa aturan yang harus dipatuhi dan dipahami"
+            },
+            {
+                element: "#tour-5",
+                title: "Dapatkan Info Perkembangan Krenova",
+                content: "Jadilah terbaik untuk kota tercinta."
+            },
+            {
+                element: "#tour-6",
+                title: "Member Area",
+                content: "Buat akun dan login untuk mendaftarkan diri di Krenova 2017"
+            },
+            {
+                element: "#tour-7",
+                title: "Tentang Kami",
+                content: "Lebih dekat dengan Krenova Temanggung 2017"
             }
         ]
     });
