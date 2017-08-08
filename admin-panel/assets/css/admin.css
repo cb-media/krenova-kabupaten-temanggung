@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+* {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 @media(min-width:768px) {
     body {
@@ -178,7 +184,7 @@
 }
 
 .panel-primary>.footer-primary>a:hover {
-    color: #0B62A4;
+    color: #23C45F;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -201,7 +207,7 @@
 }
 
 .panel-success>.footer-success>a:hover {
-    color: #0B62A4;
+    color: #323435;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -224,7 +230,7 @@
 }
 
 .panel-info>.footer-info>a:hover {
-    color: #0B62A4;
+    color: #E6D64C;
     text-decoration: none;
     font-size: 1.2em;
 }
