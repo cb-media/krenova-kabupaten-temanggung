@@ -19,7 +19,8 @@ header {
     height: 30vh;
     line-height: 30vh;
     text-align: center;
-    background-color: #3C7DE3;
+    background: url('./bg.png') no-repeat center center;
+    background-size: cover;
     margin-bottom: 20px;
 }
 
