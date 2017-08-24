@@ -979,6 +979,9 @@ input[type=password]:hover {
     font-size: 12px;
 }
 
+
+/* CSS To Galaxy S5 Potrait */
+
 @media (min-width: 360px) and (max-width: 640px) {
     #menu {
         position: fixed;
@@ -1006,7 +1009,7 @@ input[type=password]:hover {
     .navbar-default .navbar-brand img {
         float: left;
         margin-left: 25px !important;
-        width: 100px;
+        width: 120px;
         height: 50px;
         margin-top: -18px;
     }
@@ -1019,13 +1022,13 @@ input[type=password]:hover {
         font-size: 1.3em;
     }
     .hero-section h1 {
-        margin-top: -155px;
+        margin-top: -255px;
         line-height: 25px;
-        font-size: 1.2em;
+        font-size: 2.5em;
     }
     .hero-section h1 .typed,
     .primary-text {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .hero-section h1 .sub-primary-text {
         font-size: 1.1em;
@@ -1039,6 +1042,9 @@ input[type=password]:hover {
         padding: 20px;
     }
 }
+
+
+/* View for Galaxy S5 landscape  */
 
 @media (min-width: 360px) and (max-width: 640px) and (orientation:landscape) {
     /* Hero Section */
@@ -1067,6 +1073,168 @@ input[type=password]:hover {
     }
     /* Kategori Section */
     .kategori .kategori-item {
+        padding: 20px;
+    }
+}
+
+
+/* Small Mobile view */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #menu {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 75px;
+        color: #FFFFFF;
+        z-index: 9999;
+        display: none;
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #fff;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-default .navbar-brand .navbar-brand-android {
+        font-size: 1.2em;
+        color: #fff;
+    }
+    .navbar-default .navbar-brand img {
+        float: left;
+        margin-left: 20px !important;
+        width: 80px;
+        height: 45px;
+        margin-top: -18px;
+    }
+    /* Hero Section */
+    .hero-section h2 {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        font-style: italic;
+        font-size: 1.3em;
+    }
+    .hero-section h1 {
+        margin-top: -95px;
+        line-height: 25px;
+        font-size: 1.2em;
+    }
+    .hero-section h1 .typed,
+    .primary-text {
+        font-size: 1em;
+    }
+    .hero-section h1 .sub-primary-text {
+        font-size: 1.1em;
+    }
+    .hero-section h1>a {
+        margin-top: 10px;
+    }
+    /* Kategori Section */
+    .kategori .kategori-item {
+        display: block !important;
+        padding: 20px;
+    }
+}
+
+
+/* Small mobile view landscape */
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation:landscape) {
+    /* Hero Section */
+    .hero-section h2 {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        font-style: italic;
+        font-size: 1.5em;
+        margin-top: -20px;
+    }
+    .hero-section h1 {
+        margin-top: -80px;
+        line-height: 20px;
+        font-size: 1.2em;
+    }
+    .hero-section h1 .typed,
+    .primary-text {
+        font-size: 1em;
+    }
+    .hero-section h1 .sub-primary-text {
+        font-size: 1.1em;
+    }
+    .hero-section h1>a {
+        margin-top: 8px;
+    }
+    /* Kategori Section */
+    .kategori .kategori-item {
+        padding: 20px;
+    }
+}
+
+
+/* Tablet view */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #menu {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 75px;
+        color: #FFFFFF;
+        z-index: 9999;
+        display: none;
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #fff;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-default .navbar-brand .navbar-brand-android {
+        font-size: 1.2em;
+        color: #fff;
+    }
+    .navbar-default .navbar-brand img {
+        float: left;
+        margin-left: 25px !important;
+        width: 90px;
+        height: 50px;
+        margin-top: -18px;
+    }
+    /* Hero Section */
+    .hero-section h2 {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        font-style: italic;
+        font-size: 2.5em;
+    }
+    .hero-section h1 {
+        margin-top: -220px;
+        line-height: 50px;
+        font-size: 2.2em;
+    }
+    .hero-section h1 .typed,
+    .primary-text {
+        font-size: 1em;
+    }
+    .hero-section h1 .sub-primary-text {
+        font-size: 1.1em;
+    }
+    .hero-section h1>a {
+        margin-top: 10px;
+    }
+    /* Kategori Section */
+    .kategori .kategori-item {
+        display: block !important;
         padding: 20px;
     }
 }
