@@ -41,11 +41,6 @@
     background-color: #337ab7;
 }
 
-.navbar-default .navbar-brand img {
-    float: left;
-    margin-left: 25px !important;
-}
-
 .btn-primary {
     color: #337ab7;
     background-color: #fff;
@@ -979,7 +974,45 @@ input[type=password]:hover {
     font-size: 12px;
 }
 
+@media (min-width: 768px) {
+    .navbar-nav.navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+        top: -5px;
+    }
+    .navbar-nav.navbar-center p {
+        font-size: 20px;
+        margin-bottom: -10px;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 1px solid #fff;
+    }
+    .navbar-nav.brand-left img {
+        margin-top: -30px;
+        width: 40px;
+        height: 55px;
+        margin-left: 20px;
+    }
+    .navbar-nav.brand-right img {
+        margin-top: -30px;
+        width: 150px;
+        height: 50px;
+    }
+    .navbar-default .navbar-header .text {
+        display: none;
+    }
+}
+
 @media (min-width: 360px) and (max-width: 640px) {
+    .navbar-default .navbar-header .text {
+        display: inline-block;
+        padding: 20px;
+        text-transform: uppercase;
+    }
+    .navbar-nav.navbar-center p {
+        display: none;
+    }
     #menu {
         position: fixed;
         top: 0px;

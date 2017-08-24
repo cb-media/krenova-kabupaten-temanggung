@@ -19,42 +19,40 @@
 <body>
 
     <div class="container-fluid">
-        <nav class="navbar navbar-default navbar-fixed-top about-nav">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/brand-3.png" alt="Brand Krenova">
-                        <img src="assets/img/brand-4.png" alt="Brand Krenova">
-                    </a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html" class="hvr-sweep-to-top">HOME</a></li>
-                        <li><a data-scroll href="index.html#kategori" class="hvr-sweep-to-top">KATEGORI</a></li>
-                        <li><a data-scroll href="index.html#alur" class="hvr-sweep-to-top">ALUR</a></li>
-                        <li><a href="#" class="hvr-sweep-to-top" id="tour-7">ABOUT US</a></li>
-                        <li><a data-scroll href="index.html#news" class="hvr-sweep-to-top">NEWS</a></li>
-                        <li class="dropdown" id="tour-6">
-                            <a href="#" class="hvr-sweep-to-top dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MEMBER AREA <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" data-toggle="modal" data-target="#modal-login">Login</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#modal-register">Register</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+        <nav class="navbar navbar-default navbar-fixed-top about-nav" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
             </div>
-            <!-- /.container-fluid -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav hidden-xs hidden-sm brand-left">
+                    <li>
+                        <a href="javascript:void(0)" class="navbar-brand"><img src="assets/img/Logo_Kabupaten_Temanggung.png" alt="Brand Krenova"></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="index.html" class="hvr-sweep-to-top">HOME</a></li>
+                    <li><a data-scroll href="index.html#kategori" class="hvr-sweep-to-top">KATEGORI</a></li>
+                    <li><a data-scroll href="alur.html" class="hvr-sweep-to-top">ALUR</a></li>
+                    <li><a href="about.html" class="hvr-sweep-to-top" data-step="6" data-intro="Lebih Dekat dengan Krenova" data-position='left'>ABOUT US</a></li>
+                    <li><a data-scroll href="index.html#news" class="hvr-sweep-to-top">NEWS</a></li>
+                    <li class="dropdown" data-step="7" data-intro="Member Area" data-position='left'>
+                        <a href="javascript:void(0)" class="hvr-sweep-to-top dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MEMBER AREA <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#modal-login">Login</a></li>
+                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#modal-register">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm brand-right">
+                    <li>
+                        <a href="javascript:void(0)" class="navbar-brand"><img src="assets/img/brand-3.png" alt="Brand Krenova"></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 
@@ -65,7 +63,7 @@
                 <span class="primary-text">Bersama</span>
                 <span class="typed"></span> <br>
                 <span class="sub-primary-text">Kabupaten Temanggung</span> <br>
-                <a href="#" class="btn btn-lg btn-primary" id="tour-1">Daftar Sekarang</a>
+                <a href="javascript:void(0)" class="btn btn-lg btn-primary" id="tour-1">Daftar Sekarang</a>
             </h1> -->
         </div>
     </section>
@@ -87,8 +85,8 @@
                             </div>
 
                             <div class="timeline-label">
-                                <h2><a href="#">Pendaftaran</a> <span>Peserta Krenova</span></h2>
-                                <p>Daftarkan Penelitian Anda, Melalui Portal KRENOVA BALITBANG.</p>
+                                <h2><a href="javascript:void(0)">Pendaftaran</a> <span>Peserta Krenova</span></h2>
+                                <p>Daftarkan Penelitian Anda, Melalui Portal KRENOVA BAPPEDA.</p>
                             </div>
                         </div>
 
@@ -105,8 +103,8 @@
                             </div>
 
                             <div class="timeline-label">
-                                <h2><a href="#">SELEKSI ADMINISTRASI</a></h2>
-                                <p>Tim BALITBANG akan menyeleksi persyaratan administratif anda, pastikan kelengkapan syarat administratif</p>
+                                <h2><a href="javascript:void(0)">SELEKSI ADMINISTRASI</a></h2>
+                                <p>Tim BAPPEDA akan menyeleksi persyaratan administratif anda, pastikan kelengkapan syarat administratif</p>
                             </div>
                         </div>
 
@@ -123,7 +121,7 @@
                             </div>
 
                             <div class="timeline-label">
-                                <h2><a href="#">Seleksi Substansi</a></h2>
+                                <h2><a href="javascript:void(0)">Seleksi Substansi</a></h2>
 
                                 <p>Di tahapan ini, akan ditentukan peserta mana saja yang materi temuannya memenuhi persyaratan kriteria & bidang.</p>
                             </div>
@@ -141,8 +139,8 @@
                             </div>
 
                             <div class="timeline-label">
-                                <h2><a href="#">PEMAPARAN</a></h2>
-                                <p>Tim BALITBANG akan menyeleksi persyaratan administratif anda, pastikan kelengkapan syarat administratif</p>
+                                <h2><a href="javascript:void(0)">PEMAPARAN</a></h2>
+                                <p>Tim BAPPEDA akan menyeleksi persyaratan administratif anda, pastikan kelengkapan syarat administratif</p>
                             </div>
                         </div>
 
@@ -159,7 +157,7 @@
                             </div>
 
                             <div class="timeline-label">
-                                <h2><a href="#">PENINJAUAN LOKASI</a></h2>
+                                <h2><a href="javascript:void(0)">PENINJAUAN LOKASI</a></h2>
 
                                 <p>Bilamana perlu, Panitia & Tim Penilai dapat mendatangi peserta yang lolos tahap 2 & 3.</p>
                             </div>
@@ -177,7 +175,7 @@
                             </div>
 
                             <div class="timeline-label">
-                                <h2><a href="#">PENETAPAN PENERIMA PENGHARGAAN</a></h2>
+                                <h2><a href="javascript:void(0)">PENETAPAN PENERIMA PENGHARGAAN</a></h2>
                                 <p>Berdasar hasil dari Tim Penilai, Panitia menetapkan penerima penghargaan.</p>
                             </div>
                         </div>
@@ -210,19 +208,19 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <li><a href="javascript:void(0)">Privacy Policy</a>
                         </li>
-                        <li><a href="#">Terms of Use</a>
+                        <li><a href="javascript:void(0)">Terms of Use</a>
                         </li>
                     </ul>
                 </div>
