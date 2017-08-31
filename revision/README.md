@@ -1,1 +1,0 @@
-# krenova temanggung revisi
