@@ -66,6 +66,10 @@
 
 /*=========== NAVBAR ============*/
 
+.caption-logo {
+    display: none;
+}
+
 .navbar {
     box-shadow: 1px 3px rgba(10, 10, 10, 0.10);
 }
@@ -176,8 +180,24 @@
 
 /*=========== News Section ===============*/
 
+.news-container {
+    .tablet-mobile-block {
+        display: none;
+    }
+}
+
 
 /*=========== Footer ============*/
+
+.footer-section {
+    padding: 50px 20px;
+    text-align: left;
+    background: #2F78F2;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
 
 
 /*=========== Media Queries Responsive ============*/
@@ -186,6 +206,9 @@
 /* DESKTOP */
 
 @media (max-width: 85.375em) {
+    .caption-logo {
+        display: none;
+    }
     .header-section {
         height: 100vh;
         background: url('../img/hero.png') no-repeat center center;
@@ -248,12 +271,27 @@
             height: 50vh;
         }
     }
+    .tablet-mobile-block {
+        display: none;
+    }
+    .footer-section {
+        padding: 50px 20px;
+        text-align: left;
+    }
 }
 
 
 /* TABLET */
 
 @media (max-width: 61.9em) {
+    .img-logo-left,
+    .img-logo-right {
+        display: none;
+    }
+    .caption-logo {
+        display: block;
+        text-align: center;
+    }
     .header-section {
         height: 100vh;
         background: url('../img/hero.png') no-repeat center center;
@@ -317,12 +355,32 @@
             height: 50vh;
         }
     }
+    .news-container {
+        .tablet-mobile-none {
+            display: none;
+        }
+        .tablet-mobile-block {
+            display: block;
+        }
+    }
+    .footer-section {
+        padding: 50px 20px;
+        text-align: left;
+    }
 }
 
 
 /* Mobile */
 
 @media (max-width: 33.9em) {
+    .img-logo-left,
+    .img-logo-right {
+        display: none;
+    }
+    .caption-logo {
+        display: block;
+        font-size: 12px;
+    }
     .header-section {
         height: 100vh;
         background: url('../img/hero.png') no-repeat center center;
@@ -392,5 +450,20 @@
                 height: 50px;
             }
         }
+    }
+    .news-container {
+        h1 {
+            font-size: 1.5em !important;
+        }
+        .tablet-mobile-none {
+            display: none;
+        }
+        .tablet-mobile-block {
+            display: block;
+        }
+    }
+    .footer-section {
+        padding: 50px 20px;
+        text-align: center;
     }
 }
